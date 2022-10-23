@@ -1,0 +1,93 @@
+@mixin container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+@mixin btn {
+    cursor: pointer;
+    padding: 13px 50px;
+    color: $white-text;
+    background-color: $dark-pink;
+    text-transform: capitalize;
+    border: unset;
+    border-radius: 5px;
+
+    font-family: $hindmadurai;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    transition: box-shadow 1s linear,transform 0.5s ease;
+
+}
+@mixin h1 {
+    font-family:$fredoka;
+    font-weight: 400;
+    font-size: 57.33px;
+    line-height: 120.5%;
+    color: $text-color;
+    opacity: 0.9;
+}
+@mixin description {
+    font-family: $hindmadurai;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    opacity: 0.6;
+    color: $text-color;
+}
+@mixin pink-text{
+    color: $dark-pink;
+}
+@mixin h4{
+    font-family:$hindmadurai;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+}
+@mixin h3 {
+    font-family:$hindmadurai;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    color: $black;
+}
+@mixin h2 {
+    font-family:£$hindmadurai;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 49px;
+    color: $text-color;
+}
+@mixin review-title{
+    font-family:$roboto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $black;
+}
+@mixin button {
+    background: $border;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin footer-menu {
+    display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+}
+@mixin footer-link {
+    text-decoration: none;
+    font-family:$roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 0.7;
+    color: $white;
+}
+@mixin hover-btn {
+    box-shadow: 0 1em 1em -0.4em $dark-pink;
+    transform: translateY(-0.25em);
+}

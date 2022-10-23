@@ -1,0 +1,61 @@
+.fist-screen {
+    background-color: $bg;
+    background-image: url(../img/fist-screen.png);
+    background-repeat: no-repeat;
+    background-position: top right 30px;
+    min-height: 729px;
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__content {
+        padding: 145px 0 220px 0;
+        max-width: 57%;
+    }
+
+    &__subtext {
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        color: $text-color;
+    }
+
+    &__h1 {
+        @include h1;
+    }
+
+    &__pink-text {
+        @include pink-text;
+        text-shadow: 0 0 3px $dark-pink, 0 0 3px $black;
+      animation: animate 1.5s linear infinite;
+       
+    }
+    @keyframes animate {
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    &__description {
+        max-width: 78%;
+        margin-top: 35px;
+        margin-bottom: 50px;
+        @include description;
+    }
+    &__button{
+        @include btn;
+        &:hover{
+            @include hover-btn;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.delivery {
+
+    padding: 100px 0;
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        padding: 0 21px;
+        display: flex;
+        justify-content: space-between;
+        gap: 39px;
+    }
+
+    &__item {
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        border-radius: 7px;
+        padding: 26px 26px;
+        text-align: center;
+        transition: box-shadow 0.6s ease,border 0.3s linear;
+
+        &:hover{
+border:transparent;
+box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+    }
+    &__title{
+        @include h4;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    &__text{
+        font-family:$hindmadurai;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $black;
+        opacity: 0.6;
+
+
+    }
+}

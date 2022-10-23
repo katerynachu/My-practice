@@ -1,0 +1,102 @@
+.products {
+    padding: 137px 0 112px 0;
+
+    &__container {
+        @include container;
+    }
+
+    &__header {
+        margin-bottom: 50px;
+        text-align: center
+    }
+
+    &__title {
+        @include h2;
+        margin-bottom: 64px;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        opacity: 0.6;
+        color: $black;
+        text-transform: uppercase;
+        transition: transform 1s ease,color 0.5s linear;
+
+        &:hover{
+           opacity: 1;
+transform: scale(1.1);        }
+        
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item--reverse{
+        flex-direction: row-reverse;
+    }
+
+    &__content {
+        width: 39%;
+        padding: 59px 0 121px 0;
+    }
+    &__content--reverse{
+        text-align: right
+    }
+
+    &__h3 {
+        @include h3;
+        margin-bottom: 11px;
+    }
+
+    &__description {
+        @include description;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 34px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: flex-end;
+        font-family: $hindmadurai;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 36px;
+        color: $black;
+
+        &::after {
+            content: '$22.55';
+            font-size: 20px;
+            line-height: 28px;
+            text-decoration-line: line-through;
+            opacity: 0.7;
+            margin-left: 5px;
+
+        }
+    }
+   &__price--reverse{
+    justify-content: flex-end
+   }
+    &__button{
+        @include btn;
+        margin-top: 16px;
+        &:hover{
+            @include hover-btn;
+        }
+    }
+}

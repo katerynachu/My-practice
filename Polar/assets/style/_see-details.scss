@@ -1,0 +1,33 @@
+.see-details{
+    background-color: $bg-2;
+    background-image: url(../img/see-details-img.png);
+    background-repeat: no-repeat;
+    background-position: top -72px right 177px;
+
+    &__container{
+        @include container;
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__content{
+        width: 38%;
+        padding: 141px 0 145px 0;
+    }
+    &__title{
+        @include h2;
+        margin-bottom: 16px;
+    }
+    &__text{
+        @include description;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 35px;
+    }
+    &__button{
+        @include btn;
+        &:hover{
+            @include hover-btn;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.ask {
+    padding: 97px 0 149px 0;
+    text-align: center;
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    &__title {
+        width: 45%;
+        margin: 0 auto;
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 52px;
+        color: $black;
+    }
+
+    &__form {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        background: #FAFAFA;
+        border-radius: 5px;
+
+        .form {
+            &__input {
+                outline: none;
+                background: #FAFAFA;
+                width: 79%;
+                border: unset;
+                padding: 29px 0 29px 30px;
+
+                &::placeholder {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #0F0000;
+                    opacity: 0.6;
+                }
+            }
+
+            &__button {
+               @include btn;
+               height: 100%;
+               transition: border 1.3s linear,background-color 0.5s ease,color 1s linear;
+               &:hover{
+                background-color: $white;
+                color:$dark-pink;
+                border: 1px solid $dark-pink;
+               }
+            }
+        }
+    }
+}
